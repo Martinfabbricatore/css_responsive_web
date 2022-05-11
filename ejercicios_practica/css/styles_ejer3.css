@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(4 minmax(10px 1fr));
+    grid-template-rows: repeat(12 minmax(10px 1fr)); 
+    grid-template-areas:
+    "h h h h h h h h h h h h"
+    "n n s s s s s s s s a a "
+    "n n s s s s s s s s a a "
+    "f f f f f f f f f f f f "
+}
+header{
+    grid-area: h;
+    border: solid black;
+    text-align: center;
+}
+nav{
+    grid-area: n;
+    border: solid black;
+    text-align: center;
+}
+section{
+    grid-area: s;
+    border: solid black;
+    text-align: center;
+}
+aside{
+    grid-area: a;
+    border: solid black;
+    text-align: center;
+}
+footer{
+    grid-area: f;
+    border: solid black;
+    text-align: center;
+}
